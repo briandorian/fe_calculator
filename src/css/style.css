@@ -7,28 +7,37 @@
     text-align: right;
     background-color: black;
     color:white;
-    height: 40px;
-    margin-bottom: 5px;
-
+    height: 70px;
+    font-size: 45pt;
 }
 
 .calc-row{
     display: flex;
     align-content: stretch;
-    justify-content: space-between;
-    margin-bottom: .5%
+    justify-content: space-evenly;
+    /*margin-bottom: .5%*/
+}
+.calc-row :last-child{
+    background-color:#df974c;
+    color:white
 }
 .calc-button{
-    width: 24.5%;
+    width: 26%;
     background-color: #d8d9db;
     color:black;
-    height: 50px;
+    height: 90px;
+    cursor: pointer;
+    font-size: 35pt;
+    border: 1px solid black; 
+}
+.calc-button:hover{
+    background-color: #ebebeb;
 }
 
 .c-button{
-    width: 49.5%;
+    width: 52.25%;
 }
 
 .cero-button{
-    width:75% ;
+    width:78.5% ;
 }
