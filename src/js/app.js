@@ -10,6 +10,9 @@ buttons.forEach(function (number){
             case "-":
                 substraction();
                 break;
+            case "<-":
+                oneLess();
+                break;
             case "/":
                 dividing();
                 break;
@@ -28,7 +31,18 @@ buttons.forEach(function (number){
     });
 });
 
+function oneLess() {
+    if (resultado !== "0"){
+        let length = document.querySelector(".result").innerHTML.length;
+        let newResult = document.querySelector(".result").innerHTML.substring(length-1, 0);
+        if (length === 1){
+            return document.querySelector(".result").innerHTML = "0";
+        }else
+            return document.querySelector(".result").innerHTML = newResult;
+    }
+}
 function refresh(){
+    resultado = "0";
     return document.querySelector(".result").innerHTML = "0";
 }
 function addition() {
